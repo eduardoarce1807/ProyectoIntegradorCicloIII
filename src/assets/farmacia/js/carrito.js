@@ -51,7 +51,6 @@ class Carrito {
             this.leerDatosProducto(producto);
         }
         if (e.target.classList.contains('agregar-carrito2')) {
-            alert("carrito2");
             const producto = e.target.parentElement.parentElement;
             //Enviamos el producto seleccionado para tomar sus datos
             this.leerDatosProducto2(producto);

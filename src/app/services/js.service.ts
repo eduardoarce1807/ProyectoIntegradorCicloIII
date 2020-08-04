@@ -131,4 +131,41 @@ export class JSService {
     }
   }
 
+  CargaTopBarCSSLink( archivos: string[] ){
+    for( let archivo of archivos ){
+      let link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = archivo + ".css";
+      let head = document.getElementsByTagName("head")[0];
+      head.appendChild(link);
+    }
+  }
+
+  CargaTopBarCSS( archivos: string[] ){
+    for( let archivo of archivos ){
+      let link = document.createElement("link");
+      link.href = "../../assets/dashboard/css/" + archivo + ".css";
+      let head = document.getElementsByTagName("head")[0];
+      head.appendChild(link);
+    }
+  }
+
+  CargaTopBarScriptLink( archivos: string[] ){
+    for( let archivo of archivos ){
+      let script = document.createElement("script");
+      script.src = archivo + ".js";
+      let body = document.getElementsByTagName("body")[0];
+      body.appendChild(script);
+    }
+  }
+
+  CargaTopBarScript( archivos: string[] ){
+    for( let archivo of archivos ){
+      let script = document.createElement("script");
+      script.src = "../../assets/dashboard/js/" + archivo + ".js";
+      let body = document.getElementsByTagName("body")[0];
+      body.appendChild(script);
+    }
+  }
+
 }

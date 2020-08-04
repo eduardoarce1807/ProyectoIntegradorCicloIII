@@ -6,6 +6,7 @@ import { LoginGuard } from './guards/login.guard';
 import { FarmaciaComponent } from './components/farmacia/farmacia.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
 
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'detalles',
     component: ProductosComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
   },
   {
     path: '**', pathMatch: 'full', redirectTo: 'login'

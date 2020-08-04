@@ -16,8 +16,7 @@ import { MedicorpComponent } from './components/medicorp/medicorp.component';
 import { FarmaciaComponent } from './components/farmacia/farmacia.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProductosComponent } from './components/productos/productos.component';
-import { UsuariosComponent } from './components/dashboard/usuarios/usuarios.component';
-import { TopbarComponent } from './components/dashboard/topbar/topbar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +26,7 @@ import { TopbarComponent } from './components/dashboard/topbar/topbar.component'
     FarmaciaComponent,
     CarritoComponent,
     ProductosComponent,
-    UsuariosComponent,
-    TopbarComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

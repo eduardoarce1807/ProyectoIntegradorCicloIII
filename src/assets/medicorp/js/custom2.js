@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 
-    $.ajax('../../assets/medicorp/js/doctores.json', {
+    $.ajax('https://proyectointegradorcicloiii.firebaseio.com/Doctores.json', {
         dataType: 'json',
         contentType: 'application/json',
         cache: false
