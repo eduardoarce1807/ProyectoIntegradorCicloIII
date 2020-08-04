@@ -289,7 +289,7 @@ class Carrito {
         e.preventDefault();
 
         if (this.obtenerProductosLocalStorage().length === 0) {
-            alert("El carrito esta vacio cho");
+            alert("El carrito esta vacio.");
         }
         else {
             location.href = "/carrito";

@@ -23,9 +23,7 @@ window.addEventListener('load', function(){
             html += '</div>';
             html += '</div>';
             html += '</div>';
-
             
-
             $('#lista-productos').append(html);
 
         })
