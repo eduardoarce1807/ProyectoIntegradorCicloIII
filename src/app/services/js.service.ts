@@ -17,6 +17,25 @@ export class JSService {
     }
   }
 
+  CargaLoginHeadLink( archivos: string[] ){
+    for( let archivo of archivos ){
+      let css = document.createElement("link");
+      css.rel = "stylesheet";
+      css.href = archivo + "";
+      let head = document.getElementsByTagName("head")[0];
+      head.appendChild(css);
+    }
+  }
+
+  CargaLoginScriptLink( archivos: string[] ){
+    for( let archivo of archivos ){
+      let script = document.createElement("script");
+      script.src = archivo + "";
+      let body = document.getElementsByTagName("body")[0];
+      body.appendChild(script);
+    }
+  }
+
   CargaLogin( archivos: string[] ){
     for( let archivo of archivos ){
       let script = document.createElement("script");

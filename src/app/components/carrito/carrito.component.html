@@ -30,11 +30,11 @@
         <h1>Mi Carrito</h1>
     </div>
 
-    <div id="carrito" class="form-group table-responsive" >
-        <table class="form-group table table-bordered" id="lista-compra" >
+    <div id="carrito" class="form-group table-responsive">
+        <table class="form-group table table-bordered" id="lista-compra">
             <thead>
                 <tr style="text-align: center;">
-                    <th style="width: 10%;" scope="col">Imagen</th>
+                    <th style="width: 10%;" scope="col">Producto</th>
                     <th style="width: 20%;" scope="col">Nombre</th>
                     <th style="width: 10%;" scope="col">Precio</th>
                     <th style="width: 10%;" scope="col">Cantidad</th>
@@ -43,7 +43,7 @@
                 </tr>
 
             </thead>
-            <tbody >
+            <tbody>
 
             </tbody>
             <tr>
@@ -63,7 +63,8 @@
             <tr>
                 <th colspan="4" scope="col" class="text-right">TOTAL :</th>
                 <th scope="col">
-                    <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;">
+                    <input id="total" name="monto" class="font-weight-bold border-0" readonly
+                        style="background-color: white;">
                 </th>
                 <!-- <th scope="col"></th> -->
             </tr>
@@ -71,12 +72,13 @@
         </table>
     </div>
 
-    <div class="row justify-content-between">
-        <div class="col-md-4 mb-2">
-            <a href="/farmacia" class="btn btn-info btn-block">Seguir comprando</a>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <a href="/farmacia" style="font-weight: 700;" class="btn btn-dark ">Regresar a farmacia</a>
         </div>
-        <div class="col-xs-12 col-md-4">
-            <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+        <div class="col4">
+            <button href="#" style="font-weight: 700;" class="btn btn-success" id="procesar-compra">Completar
+                compra</button>
         </div>
     </div>
 

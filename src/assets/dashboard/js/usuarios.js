@@ -1,6 +1,12 @@
 $(document).ready(function () {
     // listar();
     // $('#tabla').DataTable();
+    Dashboard();
+});
+
+var bDB = document.querySelector("#bDashboard");
+bDB.addEventListener('click', function () {
+    Dashboard();
 });
 
 var bUsuarios = document.querySelector("#bUsuarios");
@@ -21,12 +27,27 @@ bCitas.addEventListener('click', function () {
     $('#tCitas').DataTable();
 });
 
+var bUnlogin = document.querySelector("#bUnlogin");
+bUnlogin.addEventListener('click', function () {
+    Eliminar(0, UActivo.length);
+
+    location.href = "/login";
+})
+
 var eUsuarios = localStorage.getItem("eUsuarios"); //Obtener datos de localStorage
 
 eUsuarios = JSON.parse(eUsuarios); // Covertir a objeto
 if (eUsuarios === null) { // Si no existe, creamos un array vacio.
     eUsuarios = []; // es es un  array
 }
+
+var UActivo = localStorage.getItem("UActivo"); //Obtener datos de localStorage
+
+    UActivo = JSON.parse(UActivo); // Covertir a objeto
+    if (UActivo === null) { // Si no existe, creamos un array vacio.
+        UActivo = []; // es es un  array
+    }
+
 
 var eCitas = localStorage.getItem("eCitas"); //Obtener datos de localStorage
 
@@ -111,3 +132,39 @@ function lDoctores() {
         });
 
 }
+
+function Dashboard() {
+
+    var UActivo = localStorage.getItem("UActivo"); //Obtener datos de localStorage
+
+    UActivo = JSON.parse(UActivo); // Covertir a objeto
+    if (UActivo === null) { // Si no existe, creamos un array vacio.
+        UActivo = []; // es es un  array
+    }
+
+    var x = JSON.parse(UActivo[0]);
+
+    $("#DashboardDiv").append(
+
+        // "<div class='container-fluid'>" +
+        // "<div class='row justify-content-center'>" +
+        // "<div class='col-md-12 my-2'>" +
+        // "<div class='bg-mattBlackLight my-2 p-3'>" +
+        "<h4>Bienvenido " + x.Nombres + " " + x.Apellidos + ".</h4>"
+        // "</div>" +
+        // "</div>" +
+        // "</div>" +
+        // "</div>"
+
+    );
+
+    $("#aUsu").append(
+        x.Usuario
+    );
+
+}
+
+function Eliminar(e, p) {
+    UActivo.splice(e, p); // Args (posición en el array, numero de items a eliminar) https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array
+    localStorage.setItem("UActivo", JSON.stringify(UActivo));
+}   

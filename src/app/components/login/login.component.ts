@@ -12,8 +12,9 @@ import { DataService } from 'src/app/services/data.service';
 export class LoginComponent implements OnInit {
 
   constructor(private Scripts: JSService, private router: Router, private Data: DataService) {
-    Scripts.CargaLoginHeadCSS(["style"]);
     Scripts.CargaLogin(["jquery","app","main"]);
+    
+    Scripts.CargaLoginHeadCSS(["style"]);
     Scripts.CargaLoginHead(["https://kit.fontawesome.com/64d58efce2"]);
     
     

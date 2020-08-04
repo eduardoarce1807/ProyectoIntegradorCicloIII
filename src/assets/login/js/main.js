@@ -1,12 +1,13 @@
+
 window.addEventListener('load', function () {
     if (obtenerProductosLocalStorage().length === 0) { // Si no existe, creamos un array vacio.
     } else {
         location.href = "/medicorp";
     }
-
+    $("#alerta").hide();
 });
 
-var accesoAdmin = false;
+let accesoAdmin = false;
 
 var eUsuarios = localStorage.getItem("eUsuarios"); //Obtener datos de localStorage
 
@@ -62,29 +63,24 @@ bRegistrar.addEventListener('click', function () {
 
 bAcceder.addEventListener('click', function () {
 
+    $("#alerta").show();
+
     var eUsuario = $("#txtUsuarioLogin").val();
     var eContraseña = $("#txtContraseñaLogin").val();
 
     if (Verificar(eUsuario, eContraseña)) {
         location.href = "/medicorp";
+    }else{
+        if (VerificarAdmin(eUsuario, eContraseña)) {
+            location.href = "/dashboard";
+        }else{
+            alert("Credenciales Incorrectas");
+        }
     }
 
-    VerificarAdmin(eUsuario, eContraseña);
 
-    if (accesoAdmin) {
-        location.href = "/dashboard";
-    }
-
-    alert(accesoAdmin);
 
 });
-
-var bAux = document.querySelector('#xdxdxd');
-
-bAux.addEventListener('click', function () {
-    aux();
-});
-
 
 //Comprobar que hay elementos en el LS
 function obtenerProductosLocalStorage() {
@@ -201,7 +197,6 @@ function VerificarDoc(eUsu, eCont) {
 
 function VerificarAdmin(us, cont) {
 
-
     $.ajax('https://proyectointegradorcicloiii.firebaseio.com/Admins.json', {
         dataType: 'json',
         contentType: 'application/json',
@@ -214,6 +209,21 @@ function VerificarAdmin(us, cont) {
             if (us == elemento.Usuario) {
                 if (cont == elemento.Contraseña) {
                     accesoAdmin = true;
+
+                    var uActivo = JSON.stringify({
+                        Nombres: elemento.Nombres,
+                        Apellidos: elemento.Apellidos,
+                        DNI: elemento.DNI,
+                        FechaDeNacimiento: elemento.FecNac,
+                        Email: elemento.Email,
+                        Usuario: elemento.Usuario,
+                        Contraseña: elemento.Contraseña,
+                        Estado: 1,
+                        ID: elemento.ID,
+                    });
+                    UActivo.push(uActivo);
+                    localStorage.setItem("UActivo", JSON.stringify(UActivo));
+
                 }
             }
 
@@ -221,6 +231,8 @@ function VerificarAdmin(us, cont) {
 
 
     });
+
+    return accesoAdmin;
 
 }
 

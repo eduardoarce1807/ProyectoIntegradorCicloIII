@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  DB: boolean;
+  DB: boolean = true;
   Us: boolean;
   Doc: boolean;
   Cit: boolean;
