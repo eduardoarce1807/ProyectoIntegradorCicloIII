@@ -1,10 +1,12 @@
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     if (obtenerProductosLocalStorage().length === 0) { // Si no existe, creamos un array vacio.
-    }else{
-        location.href="/medicorp";
+    } else {
+        location.href = "/medicorp";
     }
 
 });
+
+var accesoAdmin = false;
 
 var eUsuarios = localStorage.getItem("eUsuarios"); //Obtener datos de localStorage
 
@@ -67,9 +69,14 @@ bAcceder.addEventListener('click', function () {
         location.href = "/medicorp";
     }
 
-    if (VerificarDoc(eUsuario, eContraseña)) {
-        location.href = "../../datatables/index.html";
+    VerificarAdmin(eUsuario, eContraseña);
+
+    if (accesoAdmin) {
+        location.href = "/dashboard";
     }
+
+    alert(accesoAdmin);
+
 });
 
 var bAux = document.querySelector('#xdxdxd');
@@ -190,6 +197,31 @@ function VerificarDoc(eUsu, eCont) {
         }
     }
     return acceso;
+}
+
+function VerificarAdmin(us, cont) {
+
+
+    $.ajax('https://proyectointegradorcicloiii.firebaseio.com/Admins.json', {
+        dataType: 'json',
+        contentType: 'application/json',
+        cache: false
+    }).done(function (respuesta) {
+        console.log(respuesta);
+
+        $.each(respuesta, function (index, elemento) {
+
+            if (us == elemento.Usuario) {
+                if (cont == elemento.Contraseña) {
+                    accesoAdmin = true;
+                }
+            }
+
+        });
+
+
+    });
+
 }
 
 function aux() {

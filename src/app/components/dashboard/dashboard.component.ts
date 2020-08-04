@@ -14,11 +14,49 @@ export class DashboardComponent implements OnInit {
     "https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min"]);
     Script.CargaTopBarCSSLink(["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min",
     "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min"]);
-    
-    Script.CargaTopBarScript(["script"]);
+    Script.CargaTopBarCSS(["../DataTables/datatables.min.css"]);
+    Script.CargaTopBarScript(["script", "../DataTables/datatables.min", "usuarios"]);
   }
 
   ngOnInit(): void {
+  }
+
+  DB: boolean;
+  Us: boolean;
+  Doc: boolean;
+  Cit: boolean;
+
+  Dashboard(): void{
+    this.DB = true;
+
+    this.Us = false;
+    this.Doc = false;
+    this.Cit = false;
+  }
+
+  Usuarios(): void{
+    this.Us = true;
+
+    this.DB = false;
+    this.Doc = false;
+    this.Cit = false;
+  }
+
+  Doctores(): void{
+    this.Doc = true;
+
+    this.DB = false;
+    this.Us = false;
+    this.Cit = false;
+  }
+
+  Citas(): void{
+    this.Cit = true;
+
+    this.DB = false;
+    this.Us = false;
+    this.Doc = false;
+
   }
 
 }
