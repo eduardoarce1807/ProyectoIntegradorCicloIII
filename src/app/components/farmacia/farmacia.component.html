@@ -1,0 +1,153 @@
+<body>
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+		<img class="preloader" src="../medicorp/images/loaders/heart-loading2.gif" alt="">
+	</div> -->
+    <!-- END LOADER -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #157fda;">
+        <a class="navbar-brand" href="../medicorp/index.html">
+            <img src="../../../assets/medicorp/images/logo2.png" alt="image">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li> -->
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+				<button class="btn btn-outline-success my-2 my-sm-0"
+					type="submit">Search</button><span>&nbsp;&nbsp;</span> -->
+
+                <div class="btn-group">
+                    <button id="dropdown01" type="button" class="btn btn-secondary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div style="width: 400px;" id="carrito" class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Imagen</th>
+                                    <th style="width: 50%;">Nombre</th>
+                                    <th style="width: 25%;">Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size: 10pt;"></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block" onclick="ocultar()">Vaciar
+                            Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="parte1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="text-contant">
+                        <h1>
+                            <span class="center">
+                                <span class="icon">
+                                    <img src="../../../assets/medicorp/images/icon-logo.png" alt="#" />
+                                </span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="text-contant">
+                        <span class="center">
+                            <h1>Farmacia Online MediCorp</h1>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <h1>Salud y bienestar</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <div>
+                    <button class="category_item" category="all" type="button" id="submitButton">Todo</button>
+                    <button class="category_item" category="cypts" type="button" id="submitButton">Cuida y Protege tu
+                        salud</button>
+                    <button class="category_item" category="mal-est" type="button" id="submitButton">Malestar
+                        estomacal</button>
+                    <button class="category_item" category="dol-gen" type="button" id="submitButton">Dolor
+                        generalizado</button>
+                    <button class="category_item" category="mal-gen-fie" type="button" id="submitButton">Malestar
+                        general y fiebre</button>
+                    <button class="category_item" category="mal-tos-fle" type="button" id="submitButton">Malestar de la
+                        tos con flema</button>
+                </div>
+            </div>
+            <section class="products-list" id="lista-productos">
+
+                
+            </section>
+        </div>
+    </div>
+
+    <div class="copyright-area wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="footer-text">
+                        <p>© 2020 MediCorp. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social">
+                        <ul class="social-links">
+                            <li><a href=""><i class="fas fa-rss"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="subtotal"></span>
+    <span id="igv"></span>
+    <span id="total"></span>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>

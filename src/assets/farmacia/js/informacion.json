@@ -1,0 +1,164 @@
+[
+	{
+        "ID":1,
+        "Categoria": "cypts",
+		"SrcImg":"../../../assets/farmacia/images/mascarilla.png",
+		"Mini":"1 UN",
+		"Nombre":"Mascarilla Desechable 3 Pliegues",
+		"Descripcion": "La mascarilla desechable de 3 pliegues te ayuda con la protección contra agentes externos y reduce el riesgo de contaminación.",
+		"Precio": 1.00
+	},
+	{
+        "ID":2,
+        "Categoria": "cypts",
+		"SrcImg":"../../../assets/farmacia/images/mameluco.png",
+		"Mini":"BOLSA 1 UN",
+		"Nombre":"Mameluco de Protección Talla S/M",
+		"Descripcion": "El mameluco de protección Bendi-C te ayuda con el cuidado y seguridad contra los agentes externos del medio ambiente.",
+		"Precio": 49.90
+	},
+	{
+        "ID":3,
+        "Categoria": "cypts",
+		"SrcImg":"../../../assets/farmacia/images/protector_vinifan.png",
+		"Mini":"BOLSA 1 UN",
+		"Nombre":"Protector Facial Vinifan Medium",
+		"Descripcion": "El protector facial Vinifan Medium te ayuda con el cuidado y protección del rostro y partes mucosas como la nariz, boca y ojos. Su diseño te permite proteger el rostro de partículas de polvo y salpicaduras de otras sustancias contaminantes.",
+		"Precio": 4.50
+    },
+    {
+        "ID":4,
+        "Categoria": "cypts",
+		"SrcImg":"../../../assets/farmacia/images/cb_vivactiv.png",
+		"Mini":"TUBO 20 UN",
+		"Nombre":"Complejo B - Magnesio VIVACTIV",
+		"Descripcion": "Suplemento Nutricional Efervescente. Sin gluten, sin lactosa, sin azúcar y sin preservantes. Complejo B, magnesio y Zinc.",
+		"Precio": 17.90
+	},
+    {
+        "ID":5,
+        "Categoria": "mal-tos-fle",
+		"SrcImg":"../../../assets/farmacia/images/pharmalatum_d.png",
+		"Mini":"FRASCO 120 ML",
+		"Nombre":"Pharmalatum D Jarabe - Frasco 120 ml",
+		"Composicion": "Clorfenamina Maleato 0.001g, Guaifenesina 0.1g, Fenilefrina Clorhidrato 0.005g",
+		"Precio": 14.60
+	},
+    {
+        "ID":6,
+        "Categoria": "mal-est",
+		"SrcImg":"../../../assets/farmacia/images/bismutol_jarabe.png",
+		"Mini":"FRASCO 340 ML",
+		"Nombre":"Bismutol 87.33mg /5ml Suspensión Oral",
+		"Contraindicaciones": "Se encuentra embarazada o dando de lactar. Está tomando medicamento que contiene aspirina. Es alérgico a alguna de los ingredientes, aspirina u otros antiinflamarios no esteroideos. Si tiene problemas con el riñón o gota, Si tiene úlcera, pérdida de sangre, deposiciones negras o con sangre. Para mayor información leer presentación.",
+		"Precio": 21.20
+	},
+    {
+        "ID":7,
+        "Categoria": "mal-est",
+		"SrcImg":"../../../assets/farmacia/images/bismutol_tableta.png",
+		"Mini":"CAJA 160 UN",
+		"Nombre":"Bismutol 262 Mg Tableta Masticable",
+		"Contraindicaciones": "Se encuentra embarazada o dando de lactar. Está tomando medicamento que contiene aspirina. Es alérgico a alguna de los ingredientes, aspirina u otros antiinflamarios no esteroideos. Si tiene problemas con el riñón o gota, Si tiene úlcera, pérdida de sangre, deposiciones negras o con sangre. Para mayor información leer presentación.",
+		"Precio": 93.60
+	},
+    {
+        "ID":8,
+        "Categoria": "mal-est",
+		"SrcImg":"../../../assets/farmacia/images/sal_andrews.png",
+		"Mini":"CAJA 100 UN",
+		"Nombre":"Sal de Andrews Efervescente",
+		"Contraindicaciones": "Sangrado rectal no diagnosticado, síntomas de posible apendicitis o de obstrucción intestinal.",
+		"Precio": 48
+	},
+    {
+        "ID":9,
+        "Categoria": "mal-est",
+		"SrcImg":"../../../assets/farmacia/images/enterogermina.png",
+		"Mini":"CAJA 10 UN",
+		"Nombre":"Enterogermina Suspensión Oral",
+		"Contraindicaciones": "Si es alérgico a las esporas de Bacillus clausii o a uno cualquiera de los otros componentes de este producto.",
+		"Precio": 30.10
+	},
+    {
+        "ID":10,
+        "Categoria": "dol-gen",
+		"SrcImg":"../../../assets/farmacia/images/voltaren.png",
+		"Mini":"TUBO 100 G",
+		"Nombre":"Voltaren 1 % Emulgel - Tubo 100g",
+		"Descripcion": "Diclofenaco sódico, principio activo de Voltarén pertenece al grupo de medicamentos denominados antiinflamatorios no esteroideos, utilizados para tratar el dolor y la inflamación.",
+		"Precio": 33.70
+	},
+    {
+        "ID":11,
+        "Categoria": "dol-gen",
+		"SrcImg":"../../../assets/farmacia/images/doloflam.png",
+		"Mini":"CAJA 150 UN",
+		"Nombre":"Doloflam 200 Mg Tabletas - Caja 150un",
+		"Advertencia": "Este producto requiere receta médica.",
+		"Precio": 94.50
+	},
+    {
+        "ID":12,
+        "Categoria": "dol-gen",
+		"SrcImg":"../../../assets/farmacia/images/doloral_jarabe.png",
+		"Mini":"FRASCO 60 ML",
+		"Nombre":"Doloral 100 mg/5 mL Suspensión Oral",
+		"Contraindicaciones": "Hipersensibilidad al ibuprofeno o a cualquiera de los componentes de este medicamento. Debido a una posible reacción alérgica cruzada con el ácido acetilsalicílico u otros antiinflamatorios no esteroideos, no debe administrarse ibuprofeno en las siguientes ocasiones: pacientes con historial previo de reacción alérgica a estos fármacos, pacientes que padezcan o hayan padecido: asma, rinitis, urticarias, pólipos nasales, angioedema.",
+		"Precio": 9.90
+	},
+    {
+        "ID":13,
+        "Categoria": "dol-gen",
+		"SrcImg":"../../../assets/farmacia/images/icy_hot.png",
+		"Mini":"POTE 100 G",
+		"Nombre":"Icy Hot Pomada Tópica - Pote 100g",
+		"Descripcion": "Salicilato metilo: analgésica, antiinflamatoria, antipirética y revulsiva, utilizándose tópicamente en cremas, lociones, o linimentos como irritante cutáneo en preparaciones rubefacientes.",
+		"Precio": 23.20
+	},
+    {
+        "ID":14,
+        "Categoria": "mal-gen-fie",
+		"SrcImg":"../../../assets/farmacia/images/panadol_forte.png",
+		"Mini":"CAJA 52 UN",
+		"Nombre":"Panadol Forte Tableta - Caja 52un",
+		"Descripcion": "Alivia la fiebre y el dolor incluyendo: dolor de cabeza, migraña, dolor de espalda, dolor menstrual, dolor dental y dolor de garganta.",
+		"Precio": 44.20
+	},
+    {
+        "ID":15,
+        "Categoria": "mal-gen-fie",
+		"SrcImg":"../../../assets/farmacia/images/panadol.png",
+		"Mini":"CAJA 100 UN",
+		"Nombre":"Panadol 500mg Tableta",
+		"Contraindicaciones": "No tome si: es alérgico al paracetamol o excipientes. Para mayor información. Leer inserto.",
+		"Precio": 58.00
+	},
+    {
+        "ID":16,
+        "Categoria": "mal-gen-fie",
+		"SrcImg":"../../../assets/farmacia/images/aspirina_ultra.png",
+		"Mini":"CAJA 100 UN",
+		"Nombre":"Aspirina Ultra 500mg - Caja 100un",
+		"Contraindicaciones": "No debe utilizar Aspirina Ultra en los siguientes casos: Si es alérgico a uno de los demás compuestos o si, después de ingerir ácido acetilsalicílico, analgésicos o reumatoides o los denominados antiinflamatorios no esteroideos, presenta asfixia o reacciones a la piel similares a una alergia. Si padece de ulceras estomacales y/o al duodenal o presenta sangrados estomacales o en el intestino. En caso de enteritis crónica (Morbus Cohn, colitis ulcerosa).",
+		"Precio": 95.00
+	},
+    {
+        "ID":17,
+        "Categoria": "mal-tos-fle",
+		"SrcImg":"../../../assets/farmacia/images/panadol_0+.png",
+		"Mini":"FRASCO 15 ML",
+		"Nombre":"Panadol 100mg/ml Solución Oral Gotas",
+		"Contraindicaciones": "No administre el producto si su niño: es alérgico al paracetamol o a los excipientes. Para mayor información. Leer inserto.",
+		"Precio": 14.20
+	},
+    {
+        "ID":18,
+        "Categoria": "mal-tos-fle",
+		"SrcImg":"../../../assets/farmacia/images/abriflu.png",
+		"Mini":"FRASCO 120 ML",
+		"Nombre":"Abriflu 35mg/5ml Jarabe - Frasco 120 ml",
+		"Contraindicaciones": "Hipersensibilidad a alguno de los componentes del producto o a plantas de la familia de las Araliáceas. No administrar a niños menores de 2 años ya que existe el riesgo de que se agraven los síntomas respiratorios. Para mayor información. Leer inserto.",
+		"Precio": 15.90
+	}
+]

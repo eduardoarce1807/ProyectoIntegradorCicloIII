@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+body{
+	background: #f6f6f6;
+}
+
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+	
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #E84C3D;
+
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.category_list .ct_item-active{
+	background: #2D3E50;
+}
+
+.card-title{
+	font-size: 10pt;
+}
+
+.mini{
+	font-size: x-small;
+	font-style: bold;
+	color: gray;
+}
+
+/*Medicorp*/
+
+
+.appointment-form {
+    float: left;
+    margin: 0;
+    background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+    width: 100%;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+#submitButton {
+	font-family: 'Poppins';
+	font-weight: 600;
+    background: linear-gradient(to right, #1d86df 0%, #39b49a 100%);
+    color: #fff;
+    border-radius: 10px;
+	margin-top: 10px;
+	border: 0px;
+	transition:ease all 2s;
+}
+#submitButton:hover,#submitButton:focus {
+    background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+}	
+
+
+.navbar-brand img {
+    width: 220px;
+}
+
+
+.navbar-brand img {
+    width: 165px;
+    position: relative;
+	right: 10px;
+	padding-left: 10px;
+}
+
+/**/
+
+.preloader {
+    width: 350px;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #39b49a;
+    z-index: 11000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-area {
+    padding: 20px 0px;
+    background: #157fda;
+    color: #fff;
+	float:left;
+	width:100%;
+}
+.footer-text p {
+    margin: 0;
+}
+.footer-text p {
+    margin: 0;
+    color: #fff;
+}
+.social-links li a i {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.social-links li a i {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.footer-info i {
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+	color: #157fda;
+}
+.preloader {
+    width: 350px;
+}
+.footer-info p {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.social-links {
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+	margin:0;
+}
+.social-links {float:left;}
+
+.social-links li {
+    float: right;
+    margin: 0;
+}
+.footer-info p {
+    padding-left: 40px;
+}
+
+/*Fin Medicorp*/
+
+
+.text-contant .center {
+    float: left;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.center {
+    float: left;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.icon {
+    background: #fff;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #39b49b 3px;
+}
+.icon img {
+    width: 50px;
+    margin-top: 2px;
+}
+
+#parte1 {
+	background-image: url("../images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #2D3E50;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}

@@ -1,0 +1,121 @@
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+                    <h2 class="title">Inicia Sesión</h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="txtUsuarioLogin" name="Usuario" type="text" placeholder="Usuario" required  ngModel />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="txtContraseñaLogin" name="Contraseña" type="password" placeholder="Contraseña" required ngModel />
+                    </div>
+
+                    <input id="btnAcceder" type="submit" value="Acceder" class="btn solid" />
+
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a id="xdxdxd" href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Regístrate.</h2>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="txtNombres" type="text" placeholder="Nombre(s)" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input id="txtApellidos" type="text" placeholder="Apellidos" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-id-card"></i>
+                        <input id="txtDNI" type="text" placeholder="DNI" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input id="txtFechaNacimiento" type="date" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input id="txtEmail" type="email" placeholder="Correo Electrónico" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-user-circle"></i>
+                        <input id="txtUsuario" type="text" placeholder="Usuario" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input id="txtContraseña" type="password" placeholder="Contraseña" required />
+                    </div>
+
+                    <input id="btnRegistrar" type="submit" class="btn" value="Registrarse" />
+
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a id="asdasd" href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>¿Aún no tienes cuenta?</h3>
+                    <p>
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Registarme
+                    </button>
+                </div>
+                <img src="../../../assets/login/img/log.svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Acceder
+                    </button>
+                </div>
+                <img src="../../../assets/login/img/register.svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,36 @@
+[
+	{
+		"ID": 0,
+		"Nombres": "Julio",
+		"Apellidos": "Fernández",
+		"DNI": "01011010",
+		"FecNac": "1985-04-19",
+		"Email": "julio.f@medicorp.com",
+		"Usuario": "julioF",
+		"Contraseña": "123",
+		"Estado": 0
+
+	},
+	{
+        "ID": 1,
+		"Nombres": "Manuel",
+		"Apellidos": "Vásquez",
+		"DNI": "10100101",
+		"FecNac": "1988-09-21",
+		"Email": "manuel.v@medicorp.com",
+		"Usuario": "manuelV",
+		"Contraseña": "123",
+		"Estado": 0
+	},
+	{
+        "ID": 2,
+		"Nombres": "Fleming",
+		"Apellidos": "Aponte",
+		"DNI": "11110000",
+		"FecNac": "1982-06-13",
+		"Email": "fleming.a@medicorp.com",
+		"Usuario": "flemingA",
+		"Contraseña": "123",
+		"Estado": 0
+    }
+]

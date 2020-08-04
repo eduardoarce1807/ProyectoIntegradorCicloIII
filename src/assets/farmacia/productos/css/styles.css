@@ -1,0 +1,108 @@
+/*--- 
+
+Author: YasirKareem
+Channel: Design & Code
+Link: https://www.youtube.com/DesignCodeY
+Date: May 5, 2018
+If you like the lesson please subscribe to the channel
+
+---*/
+
+html, body {
+    height: 100%;
+    position: relative;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #e2e2e2;
+}
+
+.product {
+    padding: 200px 0;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.card-img {
+    height: 540px;
+    width: 100%;
+    background-color: #157fda;
+    background-size: cover;
+}
+
+.card-info {
+    min-height: 540px;
+    width: 100%;
+    background: #fff;
+}
+
+.card-text {
+    padding: 60px 50px;
+}
+
+h1 {
+    color: #333;
+    font-size: 35px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 10pt;
+    color: #959595;
+}
+h5 {
+    font-size: 23pt;
+}
+
+p {
+    color: #959595;
+}
+
+.card-footer {
+    padding-top: 40px;
+}
+
+.card-footer p {
+    display: inline-block;
+    font-size: 35px;
+    color: #474747;
+}
+
+p span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+button {
+    float: right;
+    height: 45px;
+    width: 145px;
+    color: #fff;
+    background: #1d86df;
+    border-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background: #1560a7;
+}
+
+.navbar-brand img {
+    width: 220px;
+}
+
+
+.navbar-brand img {
+    width: 165px;
+    position: relative;
+	right: 10px;
+	padding-left: 10px;
+}
